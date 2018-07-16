@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:Switch-Company/sticky-focus.git"
   },
   "scripts": {
     "build": "rollup -c && cross-env NODE_ENV=production rollup -c",
