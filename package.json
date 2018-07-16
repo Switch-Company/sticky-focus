@@ -4,7 +4,7 @@
   "description": "Ensure focused element is not under a sticky element",
   "main": "dist/sticky-focus.js",
   "module": "lib/index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "directories": {
     "lib": "lib"
   },
@@ -20,7 +20,7 @@
     "watch:build": "watch 'npm run build' lib --interval=1",
     "watch:test": "watch 'npm test' {dist,test} --interval=1"
   },
-  "keywords":[
+  "keywords": [
     "sticky",
     "focus",
     "accessibility",
