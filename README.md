@@ -23,7 +23,7 @@ $ npm install @switch-company/sticky-focus
 ## Usage
 
 ```js
-import KB from '@switch-company/sticky-focus';
+import stickyFocus from '@switch-company/sticky-focus';
 
 const sticky = new stickyFocus({
   elements,
