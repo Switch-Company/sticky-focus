@@ -1,0 +1,47 @@
+{
+  "title": "sticky focus",
+  "name": "@switch-company/sticky-focus",
+  "description": "Ensure focused element is not under a sticky element",
+  "main": "dist/sticky-focus.js",
+  "module": "lib/index.js",
+  "version": "0.0.0",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "rollup -c && cross-env NODE_ENV=production rollup -c",
+    "test": "tape test/*.js | tap-diff",
+    "version": "npm run build && npm run test && git add -A dist",
+    "postversion": "git push && git push --tags",
+    "watch:build": "watch 'npm run build' lib --interval=1",
+    "watch:test": "watch 'npm test' {dist,test} --interval=1"
+  },
+  "keywords":[
+    "sticky",
+    "focus",
+    "accessibility",
+    "javascript",
+    "vanilla"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.1.0",
+    "eslint-config-idiomatic": "^4.0.0",
+    "puppeteer": "^1.5.0",
+    "rollup": "^0.62.0",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.9.1",
+    "watch": "^1.0.2"
+  }
+}
