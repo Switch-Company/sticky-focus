@@ -1,6 +1,6 @@
 /**
  * @switch-company/sticky-focus - Ensure focused element is not under a sticky element
- * @version v1.0.2
+ * @version v1.0.3
  * @link undefined
  * @license ISC
  **/
